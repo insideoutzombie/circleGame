@@ -169,7 +169,7 @@
 	}
 
 	var circles = [];
-
+// this excutes the key on press based on which letter is pushed
 function onKeyDown(event){
 	if(keyData[event.key]){
 	var maxPoint = new Point(view.size.width, view.size.height);
@@ -181,7 +181,7 @@ function onKeyDown(event){
   circles.push(newCircle);
 }
 }
-// the sizing of the circles and how they appear to vanish
+
 function onFrame(event){
 	for(var i = 0; i < circles.length; i++){
 	circles[i].fillColor.hue += 1;
